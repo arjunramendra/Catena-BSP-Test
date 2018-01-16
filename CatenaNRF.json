@@ -17,7 +17,7 @@
           "help": {
             "online": "https://portal.mcci.com"
           },
-          "url": "https://github.com/arjunramendra/Catena-NRF-Drivers/blob/master/MCCI_Test_Core_SAMD-1.0.0.zip",
+          "url": "https://github.com/arjunramendra/Catena-NRF-Drivers/raw/master/MCCI_Test_Core_SAMD-1.0.0.zip",
           "archiveFileName": "MCCI_Test_Core_SAMD-1.0.0.zip",
           "checksum": "SHA-256:74989841625f0ba4c337fa5b2dc2de4644618a5fefae3cdcd88d733510a68747",
           "size": "18990190",
