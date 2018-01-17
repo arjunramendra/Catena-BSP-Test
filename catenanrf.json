@@ -5,8 +5,8 @@
           "architecture": "nrf52",
           "version": "1.0.1",
           "category": "Arduino",
-          "url": "https://github.com/arjunramendra/Catena-NRF-Drivers/raw/master/arduino-core-nrf52.tar.bz2",
-          "archiveFileName": "arduino-core-nrf52.tar.bz2",
+          "url": "https://github.com/arjunramendra/Catena-NRF-Drivers/raw/master/arduino-core-nrf52.zip",
+          "archiveFileName": "arduino-core-nrf52.zip",
           "checksum": "SHA-256:9ea059a0d983e587c637765af060938bd38482f5c3594f27cfd4994d7b543b5e",
           "size": "3177316",
           "boards": [
