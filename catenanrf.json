@@ -7,8 +7,8 @@
           "category": "Arduino",
           "url": "https://github.com/arjunramendra/Catena-NRF-Drivers/raw/master/arduino-core-nrf52.tar.bz2",
           "archiveFileName": "arduino-core-nrf52.tar.bz2",
-          "checksum": "SHA-256:f6c5b66a1257188a2e6cab3df8ec373777f62c3abb29f7196d571d221a5c75ff",
-          "size": "2262233",
+          "checksum": "SHA-256:9ea059a0d983e587c637765af060938bd38482f5c3594f27cfd4994d7b543b5e",
+          "size": "3177316",
           "boards": [
             {
               "name": "Arduino Primo"
