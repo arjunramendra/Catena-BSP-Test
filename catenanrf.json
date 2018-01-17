@@ -35,8 +35,7 @@
               "name": "nrf5x-cl-tools",
               "version": "9.3.1"
             }
-          ]
-      ],
+          ],
       "tools": [
         {
           "version": "5_2-2015q4",
