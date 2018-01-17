@@ -17,10 +17,10 @@
           "help": {
             "online": "https://portal.mcci.com"
           },
-          "url": "https://github.com/arjunramendra/Catena-NRF-Drivers/raw/master/MCCI_Test_Core_SAMD-1.0.0.zip",
-          "archiveFileName": "MCCI_Test_Core_SAMD-1.0.0.zip",
-          "checksum": "SHA-256:4d7706613ced112f510e35aa07342746e9e2c0ceb7478adde5346ff9fb00d2cd",
-          "size": "18949448",
+          "url": "https://github.com/arjunramendra/Catena-NRF-Drivers/blob/master/ArduinoCore-samd-master.zip",
+          "archiveFileName": "ArduinoCore-samd-master.zip",
+          "checksum": "SHA-256:f1e32b912a8ebbac801143aa1fc9c0a9ed94d3bd31db945e8906f207b3ac658d",
+          "size": "4211464",
           "boards": [
             {"name": "Catena4410"},
             {"name": "Catena4450"}
