@@ -17,7 +17,7 @@
           "help": {
             "online": "https://portal.mcci.com"
           },
-          "url": "https://github.com/arjunramendra/Catena-NRF-Drivers/blob/master/ArduinoCore-samd-master.zip",
+          "url": "https://github.com/arjunramendra/Catena-NRF-Drivers/raw/master/ArduinoCore-samd-master.zip",
           "archiveFileName": "ArduinoCore-samd-master.zip",
           "checksum": "SHA-256:f1e32b912a8ebbac801143aa1fc9c0a9ed94d3bd31db945e8906f207b3ac658d",
           "size": "4211464",
