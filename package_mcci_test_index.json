@@ -19,8 +19,8 @@
           },
           "url": "https://github.com/arjunramendra/Catena-NRF-Drivers/raw/master/ArduinoCore-samd-master.zip",
           "archiveFileName": "ArduinoCore-samd-master.zip",
-          "checksum": "SHA-256:f1e32b912a8ebbac801143aa1fc9c0a9ed94d3bd31db945e8906f207b3ac658d",
-          "size": "4214784",
+          "checksum": "SHA-256:079ec77253d61bac3997a84a2bb723989864d79c5500129d09656f6236005ec8",
+          "size": "4982274",
           "boards": [
             {"name": "Catena4410"},
             {"name": "Catena4450"}
