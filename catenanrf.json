@@ -1,6 +1,15 @@
 {
   "packages": [
     {
+      "name": "arduino",
+      "maintainer": "Arduino",
+      "websiteURL": "http://www.arduino.cc/",
+      "email": "packages@arduino.cc",
+      "help": {
+        "online": "http://www.arduino.cc/en/Reference/HomePage"
+      },
+  "packages": [
+    {
           "name": "Arduino nRF52 Boards",
           "architecture": "nrf52",
           "version": "1.0.1",
