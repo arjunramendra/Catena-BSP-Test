@@ -13,7 +13,7 @@
             {
               "name": "Arduino Primo"
             }
-          ],
+          
           "toolsDependencies": [
             {
               "packager": "arduino",
