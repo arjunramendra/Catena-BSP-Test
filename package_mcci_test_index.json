@@ -25,21 +25,11 @@
             {"name": "Catena4410"},
             {"name": "Catena4450"}
           ],
-          "toolsDependencies": [
+         "toolsDependencies": [
             {
               "packager": "arduino",
-              "version": "4.8.3-2014q1",
-              "name": "arm-none-eabi-gcc"
-            },
-            {
-              "packager": "arduino",
-              "version": "1.7.0",
-              "name": "bossac"
-            },
-            {
-              "packager": "arduino",
-              "version": "0.9.0-arduino",
-              "name": "openocd"
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
             },
             {
               "packager": "arduino",
@@ -48,12 +38,15 @@
             },
             {
               "packager": "arduino",
-              "name": "CMSIS-Atmel",
-              "version": "1.1.0"
-            }
-          ]
-        }
-      ],
+              "name": "openocd",
+              "version": "0.10.0-arduino1-static"
+            },
+            {
+              "packager": "arduino",
+              "name": "nrf5x-cl-tools",
+              "version": "9.3.1"
+            },
+          ],
       "tools": [
         {
           "version": "5_2-2015q4",
