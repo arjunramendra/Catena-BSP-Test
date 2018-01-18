@@ -17,10 +17,10 @@
           "help": {
             "online": "https://portal.mcci.com"
           },
-          "url": "https://github.com/mukeshbharath/MCCI-Test-Driver/raw/master/MCCI_Test_Core_SAMD-1.0.0.zip",
-          "archiveFileName": "MCCI_Test_Core_SAMD-1.0.0.zip",
-          "checksum": "SHA-256:345ad58f78ef75ff5196f391c56f30be873cb40a1f08a7bf6e2fe9716d23e2d9",
-          "size": "18289783",
+          "url": "http://downloads.arduino.cc/arduino.org/package_arduino_nrf52_1.0.0.tar.bz2",
+          "archiveFileName": "package_arduino_nrf52_1.0.0.tar.bz2",
+          "checksum": "SHA-256:d95cf5a1a3794512fd428f00f71c1e334d2fcf6e261bb22e4bbaa64143205de6",
+          "size": "2438905",
           "boards": [
             {"name": "Catena4410"},
             {"name": "Catena4450"}
