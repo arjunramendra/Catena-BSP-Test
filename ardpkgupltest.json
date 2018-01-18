@@ -17,7 +17,7 @@
           "help": {
             "online": "https://portal.mcci.com"
           },
-          "url": "https://github.com/arjunramendra/Catena-NRF-Drivers/blob/master/package_arduino_nrf52_1.0.1%20(1).tar.bz2",
+          "url": "https://github.com/arjunramendra/Catena-NRF-Drivers/raw/master/package_arduino_nrf52_1.0.1%20(1).tar.bz2",
           "archiveFileName": "package_arduino_nrf52_1.0.1%20(1).tar.bz2",
           "checksum": "SHA-256:f6c5b66a1257188a2e6cab3df8ec373777f62c3abb29f7196d571d221a5c75ff",
           "size": "2262233",
