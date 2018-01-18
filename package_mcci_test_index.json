@@ -24,7 +24,7 @@
           "boards": [
             {"name": "Catena4410"},
             {"name": "Catena4450"}
-          
+            },
          "toolsDependencies": [
             {
               "packager": "arduino",
