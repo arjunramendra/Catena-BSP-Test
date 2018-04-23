@@ -128,7 +128,7 @@ Floating point mavens will immediately recognize:
 
 The following input data can be used to test decoders.
 
-|Input | vBat | vBus | Boot | Temp (deg C) | P (mBar) | RH % | Lux |  AQI  |
+|Input | vBat | vBus | Boot | Temp(deg C) | P (mBar) | RH % | Lux |  Water Pressure  |
 |:-----|-----:|-----:|-----:|-------------:|---------:|-----:|----:|------:|
 |`17 01 18 00` | +1.5 | | |  |            |           |      |     |       |
 |`17 01 F8 00` | -0.5 | | |  |            |           |      |     |       |
