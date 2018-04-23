@@ -75,49 +75,13 @@ Field 3, if present, has three environmental readings.
 
 Field 4, if present, directly represents the ambient light level in lux as a [`uint16`](#uint16). The measurement ranges from 0 to 65536.
 
-### Air Quality Index (field 5)
+### Water Pressure and Water Level (field 5)
 
-Field 5, if present, represents the MCCI Air Quality Index (AQI).
+Field 5, if present, represents the Water Pressure as recorded by the RAYCO RC601 water pressure transducer.
+Using the recorded water pressure values, the water level can also be measured. This is achieved by using the formula as follows:
 
-The method used for calculating the AQI is not based on the proprietary Bosch method, which cannot be scientifically reviewed. However, we chose to use a scale from 0 to 500, as they did.
+				Water Level = (Water Pressure) /9.81
 
-The AQI is a number ranging from 0..500, based on logarithmic gas conductivity (1/r), scaled according to the possible outputs of the BME680.  The minimum possible output of the algorithm in the public code is mapped to 500; and the maximum possible output is mapped to 0, using a linear transformation of log(1/r).
-
-No claims about this index are made in terms of how this maps to pollution. However, [public data](https://forums.pimoroni.com/t/bme680-observed-gas-ohms-readings/6608) suggests the following table (descriptive tags taken from reference):
-
-   Quality   |  R (ohms)   |   AQI
-:-----------:|:-----------:|:--------:
-"good"       |  >360k      | < 160
-"average"    | 184k - 360k | 160 - 190
-"little bad" | 93k - 180k  | 190 - 220
-"bad"        | 48k - 93k   | 220 - 250
-"worse"      | 24k - 48k   | 250 - 280
-"very bad"   | 12.5k - 24k | 280 - 310
-"extremely bad" | < 12.5k | > 310 derived from measured gas resistance.
-
-This measurement does not take into account humidity and temperature. This is an area of ongoing investigation.
-
-Gas resistance can be recovered by inverting the equation:
-
-AQI = (-ln(R) + 16.3787) * 44.62282.
-
-or
-
--ln(R) = (AQI / 44.2282 - 16.3787)
-
-Data in a published [paper][Wang2010] suggest that humidity affects the AQI as follows, using 60% RH as the base line.
-
-30% RH | 60% RH | 85% RH
-:-----:|:------:|:------:
-  -7   |   0    |   7
-
-This suggests offsetting AQI by (7/0.15)*(RH-60%) would give a suitable linear approximation (although a ratiometric fit would be better).
-
-The same paper indicates that the resistance varies about -1.18% per degree C at 60% RH relative to the value at 25 degrees C. This suggests that the AQI should be increased by about 0.5 points/degree C, after doing the RH normalization.
-
-However, MCCI has not performed experiments to see whether the published data applies to the BME680. We guess that it is qualitatively correct, and that the signs are correct, but the multiplication factors are probably different.
-
-[Wang2010]: http://doi.org/10.3390/s100302088 "Metal Oxide Gas Sensors: Sensitivity and Influencing Factors"
 
 ## Data Formats
 
@@ -169,9 +133,7 @@ The following input data can be used to test decoders.
 |`17 01 18 00` | +1.5 | | |  |            |           |      |     |       |
 |`17 01 F8 00` | -0.5 | | |  |            |           |      |     |       |
 |`17 05 F8 00 42` | -0.5 |  | 66 |            |           |      |     |       |
-|`17 3D 43 A7 2B 19 8D 5F 88 8E 00 2E 00 00` | 4.229 | |  43 | 25.550 | 978.24 | 55.5 | 46 | 0 | 0 | 0 | 0 |
-|`17 3D 43 23 11 19 52 5F 97 AE 00 00 EF 9E` | 4.196 | |  17 | 25.320 | 978.84 | 68.0 | 0 | 249.875 |
-|`17 3F 43 23 4F 01 11 19 52 5F 97 AE 03 01 CD 50` | 4.196 | 4.938 | 17 | 25.320 | 978.84 | 68.0 | 769 | 53.25 |
+|`16 3D 46 F4 59 1E CB 62 9F 68 00 F7 67 85` | 4.434 | 4.938 | 89 | 30.792 | 1009.88 | 40.625 | 247 | 10.805 |
 
 ## Node-RED Decoding Script
 
