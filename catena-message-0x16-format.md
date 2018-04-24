@@ -44,7 +44,7 @@ Bitmap bit | Length of corresponding field (bytes) | Data format |Description
 2 | 1 | [uint8](#uint8) | [Boot counter](#boot-counter-field-2)
 3 | 5 | [int16](#int16), [uint16](#uint16), [uint8](#uint8) | [Temperature, pressure, humidity](environmental-readings-field-3)
 4 | 2 | [uint16](#uint16) | [Ambient Light](#lux-field-4)
-5 | 2 | [uflt16](#uflt16) | [Water Pressure and Water Level](#water-pressure-and-water-level-index-field-5)
+5 | 2 | [uflt16](#uflt16) | [Water Pressure](#water-pressure-and-water-level-field-5)
 6..7 | n/a | n/a | These two bits are reserved. They must always be zero.
 
 ### Battery Voltage (field 0)
