@@ -627,6 +627,28 @@ function Decoder(bytes, port) {
 				decoded.tSoilDew = dewpoint(decoded.tSoil, decoded.rhSoil);
 			}
 		} else if (cmd == 0x16) {
+			
+			// decode Catena 4450 Water Level data
+			
+			// test vectors:
+			//  17 01 18 00 ==> vBat = 1.5
+			//  17 01 F8 00 ==> vBat = -0.5
+			//  17 05 F8 00 42 ==> boot: 66, vBat: -0.5
+			//  17 0D F8 00 42 17 80 59 35 80 ==> adds one temp of 23.5, rh = 50, p = 913.48
+			//  16 3D 46 F4 59 1E CB 62 9F 68 00 F7 67 85 ==>
+			//	{
+			//    "water pressure": 01.805
+			//    "boot": 89,
+			//    "error": "none",
+			//    "lux": 247,
+			//    "p": 1009.88,
+			//    "rh": 40.625,
+			//    "tempC": 30.792,
+			//    "vBat": 4.434,
+			//    }
+			
+			// i is used as the index into the message. Start with the flag byte.
+			
 			var i = 1;
 				// fetch the bitmap.
 			var flags = bytes[i++];
