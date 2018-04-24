@@ -27,7 +27,7 @@ MCCI Catena format 0x16 messages are always sent on LoRaWAN port 1. Each message
 
 byte | description
 :---:|:---
-0 | Format code (always 0x17, decimal 23).
+0 | Format code (always 0x16, decimal 23).
 1 | bitmap encoding the fields that follow
 2..n | data bytes; use bitmap to decode.
 
