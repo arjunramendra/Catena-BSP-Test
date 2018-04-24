@@ -264,7 +264,7 @@ You can get the latest version on github:
 - or view it: https://github.com/mcci-catena/Catena-Sketches/blob/master/extra/catena-message-generic-decoder-ttn.js
 
 ```javascript
-// This function decodes the records (port 1, format 0x11, 0x14, 0x15, 0x16)
+// This function decodes the records (port 1, format 0x11, 0x14, 0x15, 0x16, 0x17)
 // sent by the MCCI Catena 4410/4450/4551 soil/water and power applications.
 // For use with console.thethingsnetwork.org
 // 2017-09-19 add dewpoints.
