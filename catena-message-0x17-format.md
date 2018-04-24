@@ -9,7 +9,7 @@
 	- [Boot counter (field 2)](#boot-counter-field-2)
 	- [Environmental Readings (field 3)](#environmental-readings-field-3)
 	- [Lux (field 4)](#lux-field-4)
-	- [Air Quality Index (field 5)](#air-quality-index-field-5)
+	- [Water Pressure and Water Level (field 5))](#water-pressure-and-water-level-index-field-5)
 - [Data Formats](#data-formats)
 	- [uint16](#uint16)
 	- [int16](#int16)
